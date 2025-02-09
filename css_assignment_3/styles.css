@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E6E6FA; /* Light purple background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Tag styling */
+.tag {
+    background-color: #FFD700;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    position: absolute !important;
+    z-index: 1 !important;
+    left: 340px !important;
+    top: 180px !important;
+    display: inline-block !important;
+    border-radius: 5px 20px 20px 5px !important;
+    
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    width:100%
+}
+
+.watch-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content styling */
+.content {
+    padding: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.series {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive design */
+@media (min-width: 600px) {
+    .card {
+        max-width: 500px;
+    }
+    .tag{
+    position: absolute;
+    z-index: 1;
+    left:80px;
+    top:210px;
+    display: inline-block;
+    border-radius: 5px 20px 20px 5px; 
+  }  
+}
+
+@media (min-width: 1024px) {
+    .card {
+        max-width: 700px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .tag{
+        position: absolute;
+        z-index: 1;
+        left:80px;
+        top:210px;
+        display: inline-block;
+        border-radius: 5px 20px 20px 5px; 
+      }  
+}
